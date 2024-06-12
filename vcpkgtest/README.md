@@ -13,4 +13,3 @@ Create CMakeLists.txt and CMakePresets.json. Change generator in CMakePresets.js
 cmake --preset=default
 
 cmake --build build
-
