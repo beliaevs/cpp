@@ -1,0 +1,6 @@
+digraph G{
+  1->2
+  subgraph {
+    rank=same; 2; 3; 4
+  }
+} 
