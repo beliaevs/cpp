@@ -16,4 +16,4 @@ howard_hinnant.exe: howard_hinnant.cpp
 	g++ -o howard_hinnant.exe -Wall -Wpedantic -Wextra -std=c++17 howard_hinnant.cpp
 
 clean:
-	rm default.exe copy.exe move.exe resource.exe howard_hinnant.exe
+	rm -f default.exe copy.exe move.exe resource.exe howard_hinnant.exe
