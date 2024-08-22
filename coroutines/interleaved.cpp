@@ -5,6 +5,8 @@
 
 struct Generator
 {
+	struct sentinel {};
+
 	struct promise_type
 	{
 		int val{};
@@ -37,6 +39,29 @@ struct Generator
 		if (not finished())
 			mCoroHdl.resume();
 	}
+
+	struct iterator
+	{
+		Handle mCoroHdl;
+		bool operator==(sentinel) const
+		{
+			return mCoroHdl.done();
+		}
+		iterator& operator++()
+		{
+			mCoroHdl.resume();
+			return *this;
+		}
+		int operator*() const
+		{
+			return mCoroHdl.promise().val;
+		}
+	};
+
+	iterator begin() { return {mCoroHdl}; }
+	sentinel end() { return {}; }
+
+
 };
 
 Generator interleaved(std::vector<int> a, std::vector<int> b)
@@ -70,8 +95,8 @@ void run_interleaved()
 	std::cout << "run_interleaved()\n";
 	auto gen = interleaved({1, 2, 3, 4, 5}, {6, 7, 8});
 
-	while (not gen.finished()) {
-		std::cout << gen.value() << "\n";
-		gen.resume();
+	for (auto e: gen)
+	{
+		std::cout << e << "\n";
 	}
 }
