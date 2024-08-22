@@ -77,7 +77,6 @@ Chat Fun()
 
 void run_chat()
 {
-	std::cout << "run_chat()\n";
 	Chat chat = Fun();
 	std::cout << chat.listen();
 	chat.answer("Where are you?\n"s);

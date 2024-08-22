@@ -92,7 +92,6 @@ Generator interleaved(std::vector<int> a, std::vector<int> b)
 
 void run_interleaved()
 {
-	std::cout << "run_interleaved()\n";
 	auto gen = interleaved({1, 2, 3, 4, 5}, {6, 7, 8});
 
 	for (auto e: gen)
