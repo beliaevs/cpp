@@ -1,5 +1,5 @@
 CPP=g++
-CPPFLAGS=-std=c++20 -fcoroutines -Wall -Wpedantic -Wextra
+CPPFLAGS=-std=c++20 -Wall -Wpedantic -Wextra
 SOURCES=main.cpp schedule.cpp interleaved.cpp chat.cpp
 HEADERS=chat.h interleaved.h schedule.h
 OBJS=main.o schedule.o interleaved.o chat.o
