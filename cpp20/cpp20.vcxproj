@@ -131,10 +131,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="concepts_test.cpp" />
+    <ClCompile Include="constexpr_test.cpp" />
+    <ClCompile Include="coroutine.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ranges_test.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="concepts_test.h" />
+    <ClInclude Include="constexpr.h" />
+    <ClInclude Include="coroutine.h" />
     <ClInclude Include="ranges_test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

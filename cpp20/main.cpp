@@ -1,5 +1,8 @@
 #include<iostream>
 #include "ranges_test.h"
+#include "concepts_test.h"
+#include "constexpr.h"
+#include "coroutine.h"
 // spaceship operator
 struct Comp
 {
@@ -20,6 +23,8 @@ int main()
 	std::cout << (c1 < c2) << ", " << (c1 > c2) << ", " << (c1 == c2) << "\n";
 
 	ranges_test();
-
+	concepts_test();
+	constexpr_test();
+	coroutine_test();
 	return 0;
 }

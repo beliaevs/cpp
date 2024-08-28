@@ -21,9 +21,27 @@
     <ClCompile Include="ranges_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="concepts_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="constexpr_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="coroutine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ranges_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="concepts_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="constexpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="coroutine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
